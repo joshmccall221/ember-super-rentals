@@ -1,7 +1,9 @@
 # super-rentals
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## ember-learn/super-rentals 
+Step by step of going through the tutorial (see:[https://github.com/joshmccall221/ember-super-rentals/commits/master](https://github.com/joshmccall221/ember-super-rentals/commits/master)).
+### Follow along
+To follow allong see: [https://guides.emberjs.com/v2.13.0/](https://guides.emberjs.com/v2.13.0/).
 
 ## Prerequisites
 
