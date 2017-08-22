@@ -2,6 +2,17 @@ import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import Ember from 'ember';
 
+let StubMapsService = Ember.Service.extend({
+  getMapElement(location) {
+    this.set('calledWithLocation', location);
+    // We create a div here to simulate our maps service,
+    // which will create and then cache the map element
+    return document.createElement('div');
+  }
+});
+
+
+
 let rental = Ember.Object.create({
   image: 'fake.png',
   title: 'test-title',
@@ -12,7 +23,11 @@ let rental = Ember.Object.create({
 });
 
 moduleForComponent('rental-listing', 'Integration | Component | rental listing', {
-  integration: true
+  integration: true,
+  beforeEach() {
+    this.register('service:maps', StubMapsService);
+    this.inject.service('maps', { as: 'mapsService' });
+  }
 });
 
 test('should display rental details', function(assert) {
