@@ -24,6 +24,9 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/super-rentals/';
+    GOOGLE_MAPS_API_KEY='AIzaSyAccevjFseYBDg32NibtuE61Q14d5Cgspc';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
