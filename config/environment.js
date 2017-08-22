@@ -25,7 +25,7 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     ENV.locationType = 'hash';
-    ENV.rootURL = '/super-rentals/';
+    ENV.rootURL = '/ember-super-rentals/';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
